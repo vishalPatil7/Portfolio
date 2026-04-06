@@ -15,8 +15,12 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  function handleContactClick(){
-    document.getElementById('contact').scrollIntoView({behaviour:"smooth"})
+  function handleContactClick() {
+    document.getElementById("contact").scrollIntoView({ behaviour: "smooth" });
+  }
+
+  function handleLogoClick() {
+    window.scrollTo({ top: 0, behaviour: "smooth" });
   }
 
   return (
@@ -29,9 +33,10 @@ export default function Navbar() {
                  : "after:bg-gradient-to-r after:from-transparent after:via-white/10 after:to-transparent bg-transparent"
              }
              after:content-['']`}
-      initial={{ y: -70, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1, ease: [0.34, 1.56, 0.64, 1] }}
+      variants={fadeIn}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 1 }}
     >
       <div
         className={`max-w-5xl mx-auto px-6 flex items-center justify-between transition-all duration-300 ${
@@ -39,7 +44,10 @@ export default function Navbar() {
         }`}
       >
         {/* Logo */}
-        <span className="font-syne font-bold text-[#FFFFF0] text-lg tracking-tight">
+        <span
+          onClick={handleLogoClick}
+          className="font-syne font-bold text-[#FFFFF0] cursor-pointer text-lg tracking-tight"
+        >
           (W)ish.dev
         </span>
 

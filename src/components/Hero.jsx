@@ -17,8 +17,12 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, []);
 
+  function handleContactClick() {
+    document.getElementById("contact").scrollIntoView({ behaviour: "smooth" });
+  }
+
   return (
-    <section className="min-h-screen pt-32 sm:pb-20 relative overflow-hidden">
+    <section className="md:min-h-screen pt-32 sm:pb-20 relative overflow-hidden">
       <BackgroundLines />
       <div className="max-w-5xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12 relative z-10">
         {/* Left – Text */}
@@ -42,7 +46,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className="text-xs uppercase tracking-widest text-muted"
+                className="text-sm uppercase tracking-widest text-muted"
               >
                 {words[index]}
               </motion.span>
@@ -64,7 +68,7 @@ export default function Hero() {
             variants={fadeUp}
             className="text-muted max-w-md mt-6 text-lg leading-relaxed"
           >
-            Hi 👋. My name is Vishal, and I am a Frontend developer living and
+            Hi 👋. My name is Vishal, and I am a Javascript developer living and
             working in Bangalore, India.
           </motion.p>
 
@@ -75,6 +79,7 @@ export default function Hero() {
               whileTap={{ scale: 0.97 }}
               aria-label="Ship stuff with me"
               className="bg-accent text-black font-bold rounded-full px-6 py-3 text-sm mt-8 hover:brightness-110 transition-all"
+              onClick={handleContactClick}
             >
               Ship stuff with me →
             </motion.button>

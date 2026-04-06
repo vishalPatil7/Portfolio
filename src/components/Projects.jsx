@@ -6,7 +6,7 @@ const PROJECTS = [
     year: "2025",
     title: "FoxMovies",
     description:
-      "An AI-powered movie discovery platform built with React, featuring conversational search and dynamic browsing of movie data.",
+      "AI-powered movie discovery platform that enables contextual search and personalized recommendations beyond traditional keyword-based browsing.",
     tech: ["AI", "React.js", "Express.js"],
     url: "https://fox-movies-brown.vercel.app/",
   },
@@ -14,7 +14,7 @@ const PROJECTS = [
     year: "2023",
     title: "Ecommerce",
     description:
-      "A full-stack e-commerce platform supporting authentication, product browsing, and cart management with a seamless user experience.",
+      "A full-stack e-commerce platform supporting authentication, product browsing, and cart management.",
     tech: ["React.js, Express.js"],
     url: "https://ecommerce-rho-eosin.vercel.app/",
   },
@@ -75,7 +75,7 @@ export default function Projects() {
               </p>
 
               {/* Tech stack pills */}
-              <div className="flex flex-wrap gap-2 mb-5">
+              <div className="flex flex-wrap items-center gap-2 mb-5">
                 <span className="text-muted text-xs mr-1">Tech Stack</span>
                 {project.tech.map((t) => (
                   <span

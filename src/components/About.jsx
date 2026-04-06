@@ -3,7 +3,7 @@ import { staggerContainer, fadeUp } from "../lib/animations";
 import TechStack from "./TechStack";
 
 const SENTENCE =
-  "I'm a front-end developer with a strong focus on developing bug-free smooth user experiences.";
+  "I'm a Full-stack developer focused on scalability, performance and smooth user experiences.";
 
 const wordVariants = {
   hidden: { opacity: 0, y: 12 },
