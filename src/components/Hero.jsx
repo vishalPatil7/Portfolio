@@ -56,7 +56,7 @@ export default function Hero() {
           {/* Main heading */}
           <motion.h1
             variants={fadeUp}
-            className="font-syne font-extrabold text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-none text-[#FDF5E6]"
+            className="font-syne font-extrabold text-4xl sm:text-6xl md:text-7xl lg:text-8xl leading-none text-[#FFFAFA]"
           >
             Javascript
             <br />
