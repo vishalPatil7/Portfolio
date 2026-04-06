@@ -5,11 +5,14 @@ const EXPERIENCES = [
   {
     role: "Senior Analyst (Associate Application Developer)",
     company: "Capgemini",
+    summary:
+      "Built and optimized a large-scale enterprise application, focusing on performance, scalability, and UI quality.",
     points: [
-      "Built and optimized large-scale enterprise React applications, improving load performance through lazy loading and code splitting.",
-      "Developed modular, reusable components to enhance maintainability and reduce duplication.",
-      "Collaborated with cross-functional teams to deliver accessible, high-quality UI aligned with design systems.",
+      "Streamlined data flow by aligning API responses with frontend needs, reducing payload overhead and preventing bottlenecks.",
+      "Ensured consistent, production-ready UI by enforcing design system standards.",
+      "Improved performance and scalability through reusable components, custom hooks, and eliminating redundant network calls.",
     ],
+    date: "Feb 2023 - Dec 2025",
   },
 ];
 
@@ -51,8 +54,13 @@ export default function Experience() {
                 </div>
 
                 <span className="text-muted text-sm mt-2 sm:mt-0">
-                  Feb 2023 - Dec 2025
+                  {exp.date}
                 </span>
+              </div>
+
+              <div className="flex items-center gap-3 mt-6">
+                <span className="w-[3px] h-5 bg-accent rounded-full inline-block"></span>
+                <p className="text-muted text-base mt-1">{exp.summary}</p>
               </div>
 
               {/* Divider */}
