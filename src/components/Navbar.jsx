@@ -63,7 +63,7 @@ export default function Navbar() {
             Contact me
           </motion.button>
           <a
-            href="https://drive.google.com/file/d/1HmmPt_Bs65OSXLgK6FR8FAA3wLx1go_w/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1InBvoQ231mHop_lbKm3iT0hYTpSdsWMc/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
